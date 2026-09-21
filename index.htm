@@ -1113,7 +1113,7 @@
       <div class="container hero-grid">
         <div class="hero-content reveal from-left">
           <div class="eyebrow">Hi, I'm</div>
-          <h1 class="hero-title">Md. <span class="accent">Reahoonㅤ</span>Zannah</h1>
+          <h1 class="hero-title">Md. <span class="accent">Reahoon</span> Zannah</h1>
           <div class="hero-role">Competitive Programmer</div>
           <p class="hero-copy">I love ML and AI, and I also enjoy solving mathematical-type problems. Currently studying Computer Science and Engineering at Green University of Bangladesh.</p>
           <div class="hero-actions">
@@ -1134,7 +1134,7 @@
             <div class="blue-block"></div>
             <div class="outline-block"></div>
             <div class="profile-wrap">
-              <img id="profileImage" src="https://i.postimg.cc/QMgkQ1md/reahoon-remove-photos-removed-background-rp.avif" alt="Md. Reahoon Zannah profile portrait" loading="eager">
+              <img id="profileImage" src="https://myimgs.org/storage/images/40983/784748202_17959416891112480_3946729501050447500_nheic.png" alt="Md. Reahoon Zannah profile portrait" loading="eager">
             </div>
             <div class="hero-note">Keep Solving.<br>Keep Growing.<span></span></div>
           </div>
@@ -1542,15 +1542,12 @@
       document.addEventListener('click', e => { if (!e.target.closest('#mobileMenu') && !e.target.closest('#menuButton')) setMenu(false); });
 
       function goHome() {
-        const path = window.location.pathname;
-        const rootPath = path === '/' || /\/index\.html$/.test(path);
-        if (rootPath) {
-          setMenu(false);
-          if (location.hash !== '#home') history.replaceState(null, '', `${location.pathname}${location.search}#home`);
-          $('#home').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start' });
-        } else {
-          window.location.href = `${window.location.origin}/#home`;
-        }
+        // Single-page site — Home should never trigger a full navigation
+        // (that previously dropped the GitHub Pages repo subpath and 404'd).
+        // Always just update the hash and smooth-scroll in place.
+        setMenu(false);
+        if (location.hash !== '#home') history.replaceState(null, '', `${location.pathname}${location.search}#home`);
+        $('#home').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start' });
       }
 
       $$('[data-nav="home"]').forEach(link => link.addEventListener('click', e => { e.preventDefault(); goHome(); }));
