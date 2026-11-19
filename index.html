@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Md. Reahoon Zannah — Competitive Programmer, CSE student, and software development enthusiast.">
+        <meta name="theme-color" content="#2366D6">
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1948'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='%23F7FFF7'%3ERZ%3C/text%3E%3C/svg%3E">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Md. Reahoon Zannah — Competitive Programmer">
+        <meta
+            property="og:description"
+            content="Personal portfolio of Md. Reahoon Zannah — Competitive Programmer, CSE student, and software development enthusiast.">
+        <meta
+            property="og:image"
+            content="https://myimgs.org/storage/images/40983/784748202_17959416891112480_3946729501050447500_nheic.png">
+        <meta property="og:image:alt" content="Md. Reahoon Zannah profile photo">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Md. Reahoon Zannah — Competitive Programmer">
+        <meta
+            name="twitter:description"
+            content="Personal portfolio of Md. Reahoon Zannah — Competitive Programmer, CSE student, and software development enthusiast.">
+        <meta
+            name="twitter:image"
+            content="https://myimgs.org/storage/images/40983/784748202_17959416891112480_3946729501050447500_nheic.png">
+        <title>Md. Reahoon Zannah — Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css?v=20261119">
+        <noscript>
+            <style>
+                .preloader{display:none!important}
+                body.is-loading{overflow:auto!important}
+                .reveal{opacity:1!important;transform:none!important}
+            </style>
+        </noscript>
+    </head>
+    <body data-theme="light" class="is-loading">
+        <!-- Boot / loading screen (3.5s). Controlled by script.js -->
+        <div class="preloader" id="preloader" role="status" aria-label="Loading portfolio">
+            <div class="preloader__inner">
+                <div class="preloader__avatar">
+                    <span class="preloader__ring" aria-hidden="true"></span>
+                    <span class="preloader__ring preloader__ring--slow" aria-hidden="true"></span>
+                    <div class="preloader__photo">
+                        <img
+                            id="preloaderImg"
+                            src="https://i.postimg.cc/kGFttw96/programmer-avatar-transparent-free.gif"
+                            alt=""
+                            width="132"
+                            height="132"
+                            decoding="async"
+                            onerror="this.parentNode.classList.add('is-fallback')">
+                        <span class="preloader__fallback" aria-hidden="true">RZ</span>
+                    </div>
+                </div>
+                <div class="preloader__user">User: Reahoon</div>
+                <div
+                    class="preloader__bar"
+                    id="preloaderBar"
+                    role="progressbar"
+                    aria-label="Loading progress"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"><span class="preloader__fill" id="preloaderFill"></span></div>
+                <div class="preloader__meta" aria-hidden="true"><span id="preloaderStatus">Starting up…</span><span id="preloaderPercent">0%</span></div>
+            </div>
+        </div>
+        <div
+            class="scroll-progress"
+            id="scrollProgress"
+            role="progressbar"
+            aria-label="Page scroll progress"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"><span class="scroll-progress__bar" id="scrollProgressBar"></span></div>
+<a class="skip-link" href="#main-content">Skip to content</a>
+        <!-- Scroll-speed meter: needle rests at 0, rises with scroll speed (0-5) -->
+        <div class="speedo" id="speedo" aria-hidden="true">
+            <svg class="speedo__svg" viewBox="0 0 200 124" focusable="false">
+                <path class="speedo__track" d="M20 100 A80 80 0 0 1 180 100" pathLength="100"/>
+                <path class="speedo__zone" d="M20 100 A80 80 0 0 1 180 100" pathLength="100"/>
+                <path class="speedo__fill" id="speedoFill" d="M20 100 A80 80 0 0 1 180 100" pathLength="100"/>
+                <g id="speedoTicks"></g>
+                <g class="speedo__needle" id="speedoNeedle" transform="rotate(-90 100 100)">
+                    <line x1="100" y1="106" x2="100" y2="38"/>
+                </g>
+                <circle class="speedo__hub" cx="100" cy="100" r="7"/>
+                <text class="speedo__value" id="speedoValue" x="100" y="119" text-anchor="middle">0.0</text>
+            </svg>
+        </div>
+        <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+            <defs>
+                <symbol id="i-home" viewBox="0 0 24 24">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+                    <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+                <symbol id="i-grid" viewBox="0 0 24 24">
+                    <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+                <symbol id="i-file" viewBox="0 0 24 24">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+                    <path d="M10 9H8"/>
+                    <path d="M16 13H8"/>
+                    <path d="M16 17H8"/></symbol>
+                <symbol id="i-user" viewBox="0 0 24 24">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/></symbol>
+                <symbol id="i-users" viewBox="0 0 24 24">
+                    <circle cx="9" cy="8" r="3"/>
+                    <path d="M3.8 19c.7-3 2.4-4.5 5.2-4.5s4.5 1.5 5.2 4.5"/>
+                    <path d="M15.5 6.5a2.7 2.7 0 1 1 0 5.2M16 14.6c2.4.2 3.7 1.6 4.2 4.4"/></symbol>
+                <symbol id="i-medal" viewBox="0 0 24 24">
+                    <path d="m8 4 4 5 4-5"/>
+                    <path d="m7 3 3 5M17 3l-3 5"/>
+                    <circle cx="12" cy="15" r="5"/>
+                    <path d="m12 12.5 1 1.5 1.8.3-1.3 1.2.3 1.8-1.8-.9-1.8.9.3-1.8-1.3-1.2 1.8-.3z"/></symbol>
+                <symbol id="i-send" viewBox="0 0 24 24">
+                    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+                    <path d="m21.854 2.147-10.94 10.939"/></symbol>
+                <symbol id="i-moon" viewBox="0 0 24 24">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+                <symbol id="i-sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="m4.93 4.93 1.41 1.41"/>
+                    <path d="m17.66 17.66 1.41 1.41"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="m6.34 17.66-1.41 1.41"/>
+                    <path d="m19.07 4.93-1.41 1.41"/></symbol>
+                <symbol id="i-palette" viewBox="0 0 24 24">
+                    <path d="M12 3.5a8.5 8.5 0 0 0 0 17h2c.8 0 1.4-.6 1.4-1.4 0-.5-.3-1-.8-1.2l-.4-.2c-.8-.4-.5-1.6.4-1.6H16a4.5 4.5 0 0 0 0-9Z"/>
+                    <circle cx="7.5" cy="10" r=".9"/>
+                    <circle cx="10" cy="7.3" r=".9"/>
+                    <circle cx="14" cy="7.3" r=".9"/></symbol>
+                <symbol id="i-chevron" viewBox="0 0 24 24">
+                    <path d="m6 9 6 6 6-6"/></symbol>
+                <symbol id="i-code" viewBox="0 0 24 24">
+                    <path d="m16 18 6-6-6-6"/>
+                    <path d="m8 6-6 6 6 6"/></symbol>
+                <symbol id="i-brain" viewBox="0 0 24 24">
+                    <path d="M8.4 7.3A3.4 3.4 0 0 1 12 4a3.4 3.4 0 0 1 3.6 3.3A3.5 3.5 0 0 1 19 10.5a3.7 3.7 0 0 1-2.2 6.7H8a3.7 3.7 0 0 1-2.4-6.5A3.4 3.4 0 0 1 8.4 7.3Z"/>
+                    <path d="M12 4v16M8.4 9.2h2.1M13.5 9.2h2M8.5 13.1h2.2M13.4 13.1h2.1M10.1 16.8h1.9"/></symbol>
+                <symbol id="i-layers" viewBox="0 0 24 24">
+                    <path d="m12 4 8 4-8 4-8-4z"/>
+                    <path d="m4 12 8 4 8-4"/>
+                    <path d="m4 16 8 4 8-4"/></symbol>
+                <symbol id="i-trend" viewBox="0 0 24 24">
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+                    <path d="M18 17V9"/>
+                    <path d="M13 17V5"/>
+                    <path d="M8 17v-3"/></symbol>
+                <symbol id="i-education" viewBox="0 0 24 24">
+                    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                    <path d="M22 10v6"/>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+                <symbol id="i-school" viewBox="0 0 24 24">
+                    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                    <path d="M22 10v6"/>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+                <symbol id="i-briefcase" viewBox="0 0 24 24">
+                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    <rect width="20" height="14" x="2" y="6" rx="1"/></symbol>
+                <symbol id="i-cube" viewBox="0 0 24 24">
+                    <path d="m12 3.5 8 4.2v8.6l-8 4.2-8-4.2V7.7z"/>
+                    <path d="m4.2 7.8 7.8 4.1 7.8-4.1M12 11.9v8.5"/></symbol>
+                <symbol id="i-trophy" viewBox="0 0 24 24">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                    <path d="M4 22h16"/>
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+                <symbol id="i-eye" viewBox="0 0 24 24">
+                    <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+                    <circle cx="12" cy="12" r="3"/></symbol>
+                <symbol id="i-download" viewBox="0 0 24 24">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <path d="m7 10 5 5 5-5"/>
+                    <path d="M12 15V3"/></symbol>
+                <symbol id="i-external" viewBox="0 0 24 24">
+                    <path d="M15 3h6v6"/>
+                    <path d="M10 14 21 3"/>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+                <symbol id="i-github" viewBox="0 0 24 24">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+                <symbol id="i-linkedin" viewBox="0 0 24 24">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect width="4" height="12" x="2" y="9"/>
+                    <circle cx="4" cy="4" r="2"/></symbol>
+                <symbol id="i-mail" viewBox="0 0 24 24">
+                    <rect width="20" height="16" x="2" y="4" rx="1"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+                <symbol id="i-bar" viewBox="0 0 24 24">
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+                    <path d="M18 17V9"/>
+                    <path d="M13 17V5"/>
+                    <path d="M8 17v-3"/></symbol>
+                <symbol id="i-menu" viewBox="0 0 24 24">
+                    <path d="M4 6h16"/>
+                    <path d="M4 12h16"/>
+                    <path d="M4 18h16"/></symbol>
+                <!-- Discord icon -->
+                <symbol id="i-discord" viewBox="0 0 24 24">
+                    <path d="M7.2 6.1A14.1 14.1 0 0 1 12 5.3c1.7 0 3.3.3 4.8.8 1.6 2.3 2.4 5 2.4 8 0 .9-.1 1.8-.3 2.6a10.8 10.8 0 0 1-3.5 1.8l-.8-1.3c-.2.1-.5.1-.7.2a11.7 11.7 0 0 1-3.8.6c-1.4 0-2.8-.2-4.1-.7l-.7-.2-.8 1.3a10.7 10.7 0 0 1-3.4-1.8 13.2 13.2 0 0 1-.3-2.7c0-3 .8-5.7 2.4-8Z"/>
+                    <circle cx="9.2" cy="11.8" r="1.1"/>
+                    <circle cx="14.8" cy="11.8" r="1.1"/>
+                    <path d="M8 15.2c1.2.8 2.5 1.2 4 1.2s2.8-.4 4-1.2"/></symbol>
+                <symbol id="i-refresh" viewBox="0 0 24 24">
+                    <path d="M20 11a8 8 0 1 0 1.5 4.8"/>
+                    <path d="M20 4.5v6.5h-6.5"/></symbol>
+                <symbol id="i-copy" viewBox="0 0 24 24">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+            <symbol id="i-chat" viewBox="0 0 24 24">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+                    <path d="M8 12h.01"/>
+                    <path d="M12 12h.01"/>
+                    <path d="M16 12h.01"/></symbol>
+                <symbol id="i-calendar" viewBox="0 0 24 24">
+                    <rect width="18" height="18" x="3" y="4" rx="2"/>
+                    <path d="M16 2v4"/>
+                    <path d="M8 2v4"/>
+                    <path d="M3 10h18"/></symbol>
+            </defs>
+</svg>
+        <div class="cursor-glow" id="cursorGlow"><span class="cursor-glow-dot"></span></div>
+        <div class="cursor-triangle" id="cursorTriangle" aria-hidden="true"><svg viewBox="0 0 30 30">
+                <path
+                    class="cursor-outer"
+                    d="M5.1 4.1Q3.2 3.3 4 5.4l7.4 19Q12 26.7 13.1 24l3-7 7.2-3q2.6-1 .2-2L5.1 4.1Z"
+                    fill="none"
+                    stroke="rgba(255,255,255,.92)"
+                    stroke-width="4"
+                    stroke-linejoin="round"/>
+                <path
+                    class="cursor-inner"
+                    d="M5.1 4.1Q3.2 3.3 4 5.4l7.4 19Q12 26.7 13.1 24l3-7 7.2-3q2.6-1 .2-2L5.1 4.1Z"
+                    fill="none"
+                    stroke="#05070b"
+                    stroke-width="2"
+                    stroke-linejoin="round"/></svg></div>
+        <header class="nav-shell">
+            <nav class="site-nav" id="siteNav" aria-label="Primary navigation"><a class="brand" href="#home" aria-label="Md. Reahoon Zannah home">RZ</a>
+                <div class="nav-links"><a class="nav-link active" href="#home" data-nav="home" data-label="Home" aria-label="Home"><svg class="icon">
+                            <use href="#i-home"/></svg><span>Home</span></a>
+                    <a class="nav-link" href="#about" data-nav="about" data-label="About" aria-label="About"><svg class="icon">
+                            <use href="#i-user"/></svg><span>About</span></a>
+                    <a class="nav-link" href="#projects" data-nav="projects" data-label="Projects" aria-label="Projects"><svg class="icon">
+                            <use href="#i-grid"/></svg><span>Projects</span></a>
+                    <a class="nav-link" href="#cv" data-nav="cv" data-label="CV" aria-label="CV"><svg class="icon">
+                            <use href="#i-file"/></svg><span>CV</span></a>
+                    <a class="nav-link" href="#contact" data-nav="contact" data-label="Contact" aria-label="Contact"><svg class="icon">
+                            <use href="#i-send"/></svg><span>Contact</span></a></div>
+                <div class="nav-actions">
+                    <div class="color-control-wrap" style="position:relative"><button
+                            class="color-control"
+                            id="colorControl"
+                            type="button"
+                            aria-label="Choose accent color"
+                            aria-expanded="false"
+                            title="Accent color"><span class="color-dot" id="colorDot"></span></button>
+                        <div class="color-popover" id="colorPopover" role="dialog" aria-label="Accent color picker">
+                            <div class="hue-wrap">
+                                <div class="hue-ring" id="hueRing" aria-label="Drag around the circular color ring to choose an accent color"><span class="hue-marker" id="hueMarker"></span>
+                                    <div class="picker-center"><button class="picker-reset" id="pickerReset" type="button" aria-label="Reset accent color to default">
+                                            <svg class="icon">
+                                                <use href="#i-refresh"/></svg>
+                                            <span>RESET</span>
+                                            </button></div>
+                                </div>
+                            </div>
+<input class="picker-native" id="nativeAccentInput" type="color" aria-label="Native accent color input"></div>
+                    </div>
+<button
+                        class="theme-toggle"
+                        id="themeToggle"
+                        type="button"
+                        aria-label="Toggle Light Mode and Blue Mode"
+                        aria-pressed="false"
+                        title="Toggle theme"><span class="knob"><svg class="icon" id="themeIcon">
+                                <use href="#i-sun"/></svg></span></button>
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"><svg class="icon">
+                            <use href="#i-menu"/></svg></button></div>
+            </nav>
+        </header>
+        <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation"><a href="#home" data-nav="home"><svg class="icon">
+                    <use href="#i-home"/></svg>Home</a>
+            <a href="#about" data-nav="about"><svg class="icon">
+                    <use href="#i-user"/></svg>About</a>
+            <a href="#projects" data-nav="projects"><svg class="icon">
+                    <use href="#i-grid"/></svg>Projects</a>
+            <a href="#cv" data-nav="cv"><svg class="icon">
+                    <use href="#i-file"/></svg>CV</a>
+            <a href="#contact" data-nav="contact"><svg class="icon">
+                    <use href="#i-send"/></svg>Contact</a></div>
+        <main id="main-content">
+            <section class="hero" id="home" data-section="home">
+                <div class="hero-pattern" aria-hidden="true"></div>
+                <div class="container hero-grid">
+                    <div class="hero-content reveal from-left">
+                        <div class="eyebrow">Hi, I'm</div>
+                        <h1 class="hero-title">Md. <span class="accent">Reahoon</span> Zannah</h1>
+                        <div class="hero-role">Competitive Programmer</div>
+                        <p class="hero-copy">Computer Science student and Competitive Programmer focused on problem solving, AI, and Machine Learning. Constantly learning, experimenting, and building.</p>
+                        <div class="hero-actions"><a class="btn btn-primary" href="#projects">View My Work</a>
+                            <a class="btn btn-ghost btn-contact" href="mailto:rihoon223.00.2038@googlemail.com"><svg class="icon">
+                                    <use href="#i-chat"/></svg>Contact Me</a></div>
+                        <div class="hero-socials" aria-label="Social profiles"><a href="https://github.com/pro382r" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon">
+                                    <use href="#i-github"/></svg></a>
+                            <a
+                                href="https://linkedin.com/in/md-reahoon-zannah"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"><svg class="icon">
+                                    <use href="#i-linkedin"/></svg></a>
+                            <a
+                                href="https://codeforces.com/profile/reahoon"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Codeforces"><svg class="icon">
+                                    <use href="#i-bar"/></svg></a>
+                            <a href="https://t.me/reahoon_zannah" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon">
+                                    <use href="#i-send"/></svg></a>
+                            <a href="mailto:rihoon223.00.2038@googlemail.com" aria-label="Email"><svg class="icon">
+                                    <use href="#i-mail"/></svg></a></div>
+                    </div>
+                    <div class="hero-visual reveal from-right" aria-label="Profile image area">
+                        <div class="hero-frame">
+                            <div class="blue-block"></div>
+                            <div class="outline-block"></div>
+                            <div class="profile-wrap"><img
+                                    id="profileImage"
+                                    src="https://i.postimg.cc/QMgkQ1md/reahoon-remove-photos-removed-background-rp.avif"
+                                    alt="Md. Reahoon Zannah profile portrait"
+                                    loading="eager"></div>
+                            <div class="hero-note">Keep Solving.<br>Keep Growing.<span></span></div>
+                            <div class="hero-ticker" role="marquee" aria-label="Assalamu Alaikum">
+                                <div class="ticker-window" aria-hidden="true">
+                                    <div class="ticker-track" id="tickerTrack">
+                                        <div class="ticker-group"><span class="ticker-gap"></span><span class="ticker-item">Assalamu Alaikum</span></div>
+                                        <div class="ticker-group"><span class="ticker-gap"></span><span class="ticker-item">Assalamu Alaikum</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-cue" aria-hidden="true"></div>
+            </section>
+            <section class="section tinted" id="about" data-section="about">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-user"/></svg><span></span></div>
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-kicker">A concise introduction to the person behind the code, projects, and problem-solving mindset.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="reveal from-left">
+                            <div class="about-copy">I'm <strong>Md. Reahoon Zannah</strong>, a passionate Competitive Programmer and CSE student at Green University of Bangladesh. I enjoy exploring Machine Learning, AI, mathematical problem solving, and practical software development.</div>
+                            <div class="about-extra" id="aboutExtra">
+                                <div class="about-copy" style="margin-top:13px">My current direction combines algorithmic thinking with hands-on project building. I value clean solutions, steady learning, and turning technical ideas into useful, working systems.</div>
+                            </div>
+<button class="text-btn" id="aboutToggle" type="button" aria-expanded="false">See More <svg class="icon">
+                                    <use href="#i-chevron"/></svg></button></div>
+                        <div class="about-grid-card reveal from-right">
+                            <div class="about-point"><span class="point-icon"><svg class="icon">
+                                        <use href="#i-code"/></svg></span>
+                                <div><strong>Problem Solving</strong><span>Passion</span></div>
+                            </div>
+                            <div class="about-point"><span class="point-icon"><svg class="icon">
+                                        <use href="#i-brain"/></svg></span>
+                                <div><strong>ML & AI</strong><span>Interest</span></div>
+                            </div>
+                            <div class="about-point"><span class="point-icon"><svg class="icon">
+                                        <use href="#i-layers"/></svg></span>
+                                <div><strong>Building Projects</strong><span>Practical Work</span></div>
+                            </div>
+                            <div class="about-point"><span class="point-icon"><svg class="icon">
+                                        <use href="#i-trend"/></svg></span>
+                                <div><strong>Always Learning</strong><span>Technical Growth</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="education-skills" data-section="education-skills">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-education"/></svg><span></span></div>
+                        <h2 class="section-title">Education & Skills</h2>
+                        <p class="section-kicker">Academic foundation and current technical toolkit, presented without artificial skill percentages.</p>
+                    </div>
+                    <div class="two-col">
+                        <article class="panel reveal from-left">
+                            <div class="panel-head"><svg class="icon head-icon">
+                                    <use href="#i-school"/></svg>
+                                <h3 class="panel-title">Education</h3>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-item"><span class="timeline-dot"></span>
+                                    <div><strong>Green University of Bangladesh</strong><span>2022–2027</span><span>B.Sc. in Computer Science and Engineering</span></div>
+                                </div>
+                                <div class="timeline-item"><span class="timeline-dot"></span>
+                                    <div><strong>Mymensingh Commerce College</strong><span>HSC · 2020</span><span>Science · GPA 5.00</span></div>
+                                </div>
+                                <div class="timeline-item"><span class="timeline-dot"></span>
+                                    <div><strong>Govt. Laboratory High School</strong><span>SSC · 2018</span><span>Science · GPA 4.89</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="panel reveal from-right">
+                            <div class="panel-head"><svg class="icon head-icon">
+                                    <use href="#i-code"/></svg>
+                                <h3 class="panel-title">Skills</h3>
+                            </div>
+                            <div class="skills-layout">
+                                <div class="skill-groups">
+                                    <div class="skill-group">
+                                        <h3>Programming Languages</h3>
+                                        <div class="skill-list"><span class="skill-chip">C++</span><span class="skill-chip">Python</span><span class="skill-chip">JavaScript</span></div>
+                                    </div>
+                                    <div class="skill-group">
+                                        <h3>Web / Frameworks / Backend</h3>
+                                        <div class="skill-list"><span class="skill-chip">PHP</span><span class="skill-chip">HTML</span><span class="skill-chip">CSS</span><span class="skill-chip">Django</span></div>
+                                    </div>
+                                    <div class="skill-group">
+                                        <h3>Databases / Systems</h3>
+                                        <div class="skill-list"><span class="skill-chip">MySQL</span></div>
+                                    </div>
+                                </div>
+                                <div class="soft-skills">
+                                    <div class="skill-group">
+                                        <h3>Soft Skills</h3>
+                                        <div class="skill-list"><span class="skill-chip">Communication</span><span class="skill-chip">Problem Solving</span><span class="skill-chip">Team Leadership</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section tinted" id="experience" data-section="experience">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-briefcase"/></svg><span></span></div>
+                        <div class="title-chart">
+                            <h2 class="section-title" tabindex="0">Experience</h2>
+                            <span class="chart-hint" aria-hidden="true"><svg class="icon">
+                                    <use href="#i-bar"/></svg></span>
+                            <div class="chart-pop" role="group" aria-label="Experience timeline chart"><div class="chart-card"></div></div>
+                        </div>
+                        <p class="section-kicker">Professional experience and practical customer-facing work.</p>
+                    </div>
+                    <div class="experience-list">
+                        <article
+                            class="experience-card reveal from-left"
+                            data-role="Customer Care Executive"
+                            data-start="2026-05"
+                            data-end="2026-07">
+                            <div class="experience-brand"><a href="https://impressivesale.com/" target="_blank" rel="noopener noreferrer" style="color:inherit">Impressive Sale</a></div>
+                            <div>
+                                <div class="experience-title">Customer Care Executive</div>
+                                <div class="experience-meta">Professional Experience</div>
+                                <div class="experience-date"><svg class="icon">
+                                        <use href="#i-calendar"/></svg><span class="date-range">May 2026 – Jul 2026</span><em class="date-status"></em></div>
+                            </div>
+                            <div class="experience-text">Handled customer queries, provided product support, and worked toward a positive customer experience. <a href="https://impressivesale.com/" target="_blank" rel="noopener noreferrer">impressivesale.com</a></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="leadership" data-section="leadership">
+                <div class="container">
+                    <div class="section-heading reveal from-right">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-users"/></svg><span></span></div>
+                        <div class="title-chart">
+                            <h2 class="section-title" tabindex="0">Activities</h2>
+                            <span class="chart-hint" aria-hidden="true"><svg class="icon">
+                                    <use href="#i-bar"/></svg></span>
+                            <div class="chart-pop" role="group" aria-label="Activities timeline chart"><div class="chart-card"></div></div>
+                        </div>
+                        <p class="section-kicker">Leadership activities with the Green University Competitive Programming Community.</p>
+                    </div>
+                    <div class="experience-list">
+                        <article
+                            class="experience-card leadership-card reveal from-left"
+                            data-role="Vice President Technical"
+                            data-start="2026-09"
+                            data-end="2027-08">
+                            <div class="experience-brand">GUBCPC</div>
+                            <div>
+                                <div class="experience-title">Vice President Technical</div>
+                                <div class="experience-meta">Leadership Role</div>
+                                <div class="experience-date"><svg class="icon">
+                                        <use href="#i-calendar"/></svg><span class="date-range">2026 – 2027</span><em class="date-status"></em></div>
+                            </div>
+                            <div class="experience-text">Technical leadership role within the Green University Competitive Programming Community.</div>
+                        </article>
+                        <article
+                            class="experience-card leadership-card reveal from-right"
+                            data-role="Volunteer (Logistics)"
+                            data-start="2025-10"
+                            data-end="2025-10">
+                            <div class="experience-brand">Green Fest</div>
+                            <div>
+                                <div class="experience-title">Volunteer – Logistics Department</div>
+                                <div class="experience-meta">Volunteer</div>
+                                <div class="experience-date"><svg class="icon">
+                                    <use href="#i-calendar"/></svg><span class="date-range">Oct 2025</span><em class="date-status"></em></div>
+                            </div>
+                            <div class="experience-text">Served as a volunteer in the Logistics Department at Green Fest, the fest of Green University.</div>
+                        </article>
+                        <article
+                            class="experience-card leadership-card reveal from-left"
+                            data-role="Designer (Lead)"
+                            data-start="2025-09"
+                            data-end="2026-08">
+                            <div class="experience-brand">GUBCPC</div>
+                            <div>
+                                <div class="experience-title">Designer (Lead)</div>
+                                <div class="experience-meta">Leadership Role</div>
+                                <div class="experience-date"><svg class="icon">
+                                        <use href="#i-calendar"/></svg><span class="date-range">2025 – 2026</span><em class="date-status"></em></div>
+                            </div>
+                            <div class="experience-text">Design leadership activity within the Green University Competitive Programming Community.</div>
+                        </article>
+                        <article
+                            class="experience-card leadership-card reveal from-right"
+                            data-role="General Member"
+                            data-start="2024-01"
+                            data-end="2025-12">
+                            <div class="experience-brand">GCC</div>
+                            <div>
+                                <div class="experience-title">General Member</div>
+                                <div class="experience-meta">Green Culture Club</div>
+                                <div class="experience-date"><svg class="icon">
+                                    <use href="#i-calendar"/></svg><span class="date-range">2024 – 2025</span><em class="date-status"></em></div>
+                            </div>
+                            <div class="experience-text">Served as a general member of the Green Culture Club (GCC).</div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="projects" data-section="projects">
+                <div class="container">
+                    <div class="projects-top reveal from-left">
+                        <div class="section-heading" style="margin-bottom:0">
+                            <div class="heading-line"><svg class="icon">
+                                    <use href="#i-cube"/></svg><span></span></div>
+                            <h2 class="section-title">Projects</h2>
+                            <p class="section-kicker">Technical work, with structure ready for future projects without changing the visual system.</p>
+                        </div>
+                    </div>
+                    <div class="projects-grid" id="projectsGrid">
+                        <article class="project-card reveal from-left">
+                            <div class="project-body">
+                                <div class="project-title">
+                                    <h3>Rec Studio</h3>
+<svg class="icon" style="color:var(--accent)">
+                                        <use href="#i-external"/></svg></div>
+                                <p class="project-description">A browser-based screen recorder with modern and minimal UI. Record, download, and share easily.</p>
+                                <div class="project-visual" aria-hidden="true"><img
+                                        src="https://i.postimg.cc/ncxr6Fsx/rec-studio-ui.png"
+                                        alt="Rec Studio preview"
+                                        loading="lazy"
+                                        style="width:100%;height:180px;object-fit:cover;display:block"></div>
+                                <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Web</span><span class="tag">Tool</span></div>
+                                <div class="project-actions"><a class="mini-btn" href="https://rec-studio-taupe.vercel.app/" target="_blank" rel="noopener noreferrer"><svg class="icon">
+                                            <use href="#i-external"/></svg>Live Demo</a>
+                                    <a
+                                        class="mini-btn"
+                                        href="https://github.com/pro382r/RecStudio/tree/main"
+                                        target="_blank"
+                                        rel="noopener noreferrer"><svg class="icon">
+                                            <use href="#i-github"/></svg>GitHub</a></div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal from-right">
+                            <div class="project-body">
+                                <div class="project-title">
+                                    <h3>Chess Game</h3>
+<svg class="icon" style="color:var(--accent)">
+                                        <use href="#i-code"/></svg></div>
+                                <p class="project-description">A multiplayer chess game built with Python, using sockets for real-time gameplay between two players.</p>
+                                <div class="project-visual" aria-hidden="true"><img
+                                        src="https://i.postimg.cc/LspxPZ5B/chess-game-socket.png"
+                                        alt="Chess Game preview"
+                                        loading="lazy"
+                                        style="width:100%;height:180px;object-fit:cover;display:block"></div>
+                                <div class="project-tags"><span class="tag">Python</span><span class="tag">Sockets</span><span class="tag">Game</span></div>
+                                <div class="project-actions"><a class="mini-btn" href="#contact" style="opacity:.55;pointer-events:none;color:var(--muted)"><svg class="icon">
+                                            <use href="#i-send"/></svg>Add Demo</a><a
+                                        class="mini-btn"
+                                        href="https://github.com/pro382r/chess-game-socket-and-python"
+                                        target="_blank"
+                                        rel="noopener noreferrer"><svg class="icon">
+                                            <use href="#i-github"/></svg>GitHub</a></div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal from-left">
+                            <div class="project-body">
+                                <div class="project-title">
+                                    <h3>Blood Donation</h3>
+<svg class="icon" style="color:var(--accent)">
+                                        <use href="#i-code"/></svg></div>
+                                <p class="project-description">A web application for managing blood donation requests and donor information, built as part of academic coursework.</p>
+                                <div class="project-visual" aria-hidden="true"><img
+                                        src="https://i.postimg.cc/526VrTmW/life-drop.png"
+                                        alt="Blood Donation preview"
+                                        loading="lazy"
+                                        style="width:100%;height:180px;object-fit:cover;display:block"></div>
+                                <div class="project-tags"><span class="tag">Web</span><span class="tag">HTML/CSS</span><span class="tag">Academic</span></div>
+                                <div class="project-actions"><a class="mini-btn" href="#contact" style="opacity:.55;pointer-events:none;color:var(--muted)"><svg class="icon">
+                                            <use href="#i-send"/></svg>Add Demo</a><a
+                                        class="mini-btn"
+                                        href="https://github.com/pro382r/GUB-Academic/tree/main/WEB/BloodDonation"
+                                        target="_blank"
+                                        rel="noopener noreferrer"><svg class="icon">
+                                            <use href="#i-github"/></svg>GitHub</a></div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal from-right">
+                            <div class="project-body">
+                                <div class="project-title">
+                                    <h3>Online Library Management System</h3>
+<svg class="icon" style="color:var(--accent)">
+                                        <use href="#i-code"/></svg></div>
+                                <p class="project-description">A Structured Programming Lab project — an Online Library Management System (OLMS) built as part of academic coursework.</p>
+                                <div class="project-visual" aria-hidden="true"><img
+                                        src="https://i.postimg.cc/MZnp1HnM/olms.png"
+                                        alt="Online Library Management System preview"
+                                        loading="lazy"
+                                        style="width:100%;height:180px;object-fit:cover;display:block"></div>
+                                <div class="project-tags"><span class="tag">C</span><span class="tag">Structured Programming</span><span class="tag">Academic</span></div>
+                                <div class="project-actions"><a class="mini-btn" href="#contact" style="opacity:.55;pointer-events:none;color:var(--muted)"><svg class="icon">
+                                            <use href="#i-send"/></svg>Add Demo</a><a
+                                        class="mini-btn"
+                                        href="https://github.com/pro382r/GUB-Academic/tree/main/SP-lab"
+                                        target="_blank"
+                                        rel="noopener noreferrer"><svg class="icon">
+                                            <use href="#i-github"/></svg>GitHub</a></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section tinted" id="achievements" data-section="achievements">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-trophy"/></svg><span></span></div>
+                        <h2 class="section-title">Achievements</h2>
+                        <p class="section-kicker">Selected documented academic and competitive programming details.</p>
+                    </div>
+                    <div class="achievement-wrap reveal from-right">
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-medal"/></svg></div>
+                            <div>
+                                <h3>5th Position</h3>
+                                <p>IDMO · 2025</p>
+                                <p>Secured 5th position at Intra Department Mathematical Olympiad.</p>
+                            </div>
+                        </article>
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-bar"/></svg></div>
+                            <div>
+                                <h3>Codeforces</h3>
+<a href="https://codeforces.com/profile/reahoon" target="_blank" rel="noopener noreferrer">reahoon</a>
+                                <p>Rating: 754</p>
+                            </div>
+                        </article>
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-code"/></svg></div>
+                            <div>
+                                <h3>Python (Django) Training</h3>
+                                <p>2025 · Certified</p>
+                                <p>Completed an 80-hour training program conducted by IIT, Jahangirnagar University under the EDGE Project, ICT Division.</p>
+                            </div>
+                        </article>
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-trophy"/></svg></div>
+                            <div>
+                                <h3>JobReady (With AI) v2</h3>
+                                <p>Wadhwani Foundation · Advanced Level · Certified</p>
+                                <p>Completed a 75-hour Employability Skills training covering basic knowledge and in-class application. Issued August 28, 2026.</p>
+                            </div>
+                        </article>
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-file"/></svg></div>
+                            <div>
+                                <h3>Build ATS-Winning CV</h3>
+                                <p>Grameenphone Academy · Certificate of Excellence</p>
+                                <p>Successfully completed the Build ATS-Winning CV course. Issued November 15, 2026.</p>
+                            </div>
+                        </article>
+                        <article class="achievement">
+                            <div class="achievement-icon"><svg class="icon" style="width:26px;height:26px">
+                                    <use href="#i-brain"/></svg></div>
+                            <div>
+                                <h3>Ace the Aptitude Test</h3>
+                                <p>Grameenphone Academy · Certificate of Excellence</p>
+                                <p>Successfully completed the Ace the Aptitude Test course. Issued November 15, 2026.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="cv" data-section="cv">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-file"/></svg><span></span></div>
+                        <h2 class="section-title">CV</h2>
+                        <p class="section-kicker">My actual CV, ready to preview or download as a PDF.</p>
+                    </div>
+                    <div class="cv-card reveal from-right">
+                        <div class="cv-thumb" aria-label="CV preview thumbnail">
+                            <div class="cv-head">Md. Reahoon Zannah</div>
+<span></span><span></span><span></span><span></span><span></span><span></span></div>
+                        <div class="cv-copy">
+                            <h3>My Curriculum Vitae</h3>
+                            <p>Preview my CV right here, or download the PDF to keep.</p>
+                        </div>
+                        <div class="cv-actions"><button class="btn btn-ghost" id="previewCv" type="button"><svg class="icon">
+                                    <use href="#i-eye"/></svg>Preview CV</button><button class="btn btn-primary" id="downloadCv" type="button"><svg class="icon">
+                                    <use href="#i-download"/></svg>Download CV</button></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section tinted" id="contact" data-section="contact">
+                <div class="container">
+                    <div class="section-heading reveal from-left">
+                        <div class="heading-line"><svg class="icon">
+                                <use href="#i-send"/></svg><span></span></div>
+                        <h2 class="section-title">Contact</h2>
+                        <p class="section-kicker">Feel free to reach out. I'm always open to discussing new opportunities, interesting projects, or just a friendly chat.</p>
+                    </div>
+                    <div class="contact-layout">
+                        <div class="contact-info reveal from-left">
+                            <h3 class="contact-info-heading">My Contact Information</h3>
+                            <div class="contact-grid"><a
+                                    class="contact-card"
+                                    href="mailto:rihoon223.00.2038@googlemail.com"
+                                    style="position:relative;padding-right:38px"><span class="contact-icon"><svg class="icon">
+                                            <use href="#i-mail"/></svg></span><span><span class="contact-label">Email</span><span class="contact-value email-glow">rihoon223.00.2038@googlemail.com</span></span><button
+                                        type="button"
+                                        class="email-copy-btn"
+                                        id="emailCopyBtn"
+                                        aria-label="Copy email address"
+                                        title="Copy email"><svg class="icon" style="width:15px;height:15px">
+                                            <use href="#i-copy"/></svg></button></a>
+                                <a class="contact-card" href="https://t.me/reahoon_zannah" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg class="icon">
+                                            <use href="#i-send"/></svg></span><span><span class="contact-label">Telegram</span><span class="contact-value">@reahoon_zannah</span></span></a>
+                                <a
+                                    class="contact-card"
+                                    href="https://linkedin.com/in/md-reahoon-zannah"
+                                    target="_blank"
+                                    rel="noopener noreferrer"><span class="contact-icon"><svg class="icon">
+                                            <use href="#i-linkedin"/></svg></span><span><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/md-reahoon-zannah</span></span></a>
+                                <a class="contact-card" href="https://github.com/pro382r" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg class="icon">
+                                            <use href="#i-github"/></svg></span><span><span class="contact-label">GitHub</span><span class="contact-value">github.com/pro382r</span></span></a>
+                                <button
+                                    class="contact-card contact-copy"
+                                    id="discordContact"
+                                    type="button"
+                                    aria-label="Copy Discord ID rihun38"><span class="contact-icon"><svg class="icon">
+                                            <use href="#i-discord"/></svg></span><span><span class="contact-label">Discord</span><span class="contact-value">rihun38</span></span></button></div>
+                        </div>
+                        <div class="contact-form-card reveal from-right">
+                            <h3 class="contact-form-heading">Send Me a Message</h3>
+                            <p class="contact-form-intro">Have a question or an idea? Fill out the form below to get in touch.</p>
+                            <form class="contact-form" id="contactForm">
+                                <!-- Web3Forms configuration: replace the placeholder with your Access Key. -->
+<input type="hidden" name="access_key" value="f436233f-a367-4ca3-b7f9-ca60d22635d0">
+                                <input type="hidden" name="from_name" value="Md. Reahoon Zannah Portfolio">
+                                <!-- Honeypot field for basic bot/spam protection. Keep hidden. -->
+<input
+                                    type="checkbox"
+                                    name="botcheck"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                    style="display:none !important;">
+                                <div class="form-row">
+                                    <div class="form-field"><label for="contactName">Your Name</label>
+                                        <input
+                                            class="form-control"
+                                            id="contactName"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Enter your name"
+                                            autocomplete="name"
+                                            required></div>
+                                    <div class="form-field"><label for="contactEmail">Your Email</label>
+                                        <input
+                                            class="form-control"
+                                            id="contactEmail"
+                                            name="email"
+                                            type="email"
+                                            placeholder="you@example.com"
+                                            autocomplete="email"
+                                            required></div>
+                                </div>
+                                <div class="form-field"><label for="contactSubject">Subject <span>(Optional)</span></label>
+                                    <input class="form-control" id="contactSubject" name="subject" type="text" placeholder="What is this about?"></div>
+                                <div class="form-field"><label for="contactMessage">Email Body</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="contactMessage"
+                                        name="message"
+                                        rows="6"
+                                        placeholder="Write your message here..."
+                                        required></textarea></div>
+<button class="btn btn-primary contact-submit" type="submit"><svg class="icon">
+                                        <use href="#i-send"/></svg>Send Message</button>
+                                <p class="form-note" id="contactFormNote" role="status" aria-live="polite">Your message will be sent securely. I'll get back to you as soon as possible.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">RZ</div>
+                        <div><strong>Md. Reahoon Zannah</strong><span>Competitive Programmer</span></div>
+                    </div>
+                    <div class="footer-center">Keep Solving. Keep Growing.
+                        <div class="footer-rule"></div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-socials"><a href="https://github.com/pro382r" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon">
+                                    <use href="#i-github"/></svg></a><a
+                                href="https://linkedin.com/in/md-reahoon-zannah"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"><svg class="icon">
+                                    <use href="#i-linkedin"/></svg></a><a
+                                href="https://codeforces.com/profile/reahoon"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Codeforces"><svg class="icon">
+                                    <use href="#i-bar"/></svg></a><a href="https://t.me/reahoon_zannah" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon">
+                                    <use href="#i-send"/></svg></a><a href="mailto:rihoon223.00.2038@googlemail.com" aria-label="Email"><svg class="icon">
+                                    <use href="#i-mail"/></svg></a></div>
+                    </div>
+                </div>
+                <div class="footer-bottom"><span>© <span id="year"></span> Md. Reahoon Zannah. All rights reserved.</span></div>
+            </div>
+        </footer>
+        <nav class="dot-nav" id="dotNav" aria-label="Section navigation">
+            <ul>
+                <li><a href="#home" data-dot="home" aria-label="Home"><span class="dot-label">Home</span><i class="dot-mark"></i></a></li>
+                <li><a href="#about" data-dot="about" aria-label="About"><span class="dot-label">About</span><i class="dot-mark"></i></a></li>
+                <li><a href="#education-skills" data-dot="education-skills" aria-label="Education &amp; Skills"><span class="dot-label">Education &amp; Skills</span><i class="dot-mark"></i></a></li>
+                <li><a href="#experience" data-dot="experience" aria-label="Experience"><span class="dot-label">Experience</span><i class="dot-mark"></i></a></li>
+                <li><a href="#leadership" data-dot="leadership" aria-label="Activities"><span class="dot-label">Activities</span><i class="dot-mark"></i></a></li>
+                <li><a href="#projects" data-dot="projects" aria-label="Projects"><span class="dot-label">Projects</span><i class="dot-mark"></i></a></li>
+                <li><a href="#achievements" data-dot="achievements" aria-label="Achievements"><span class="dot-label">Achievements</span><i class="dot-mark"></i></a></li>
+                <li><a href="#cv" data-dot="cv" aria-label="CV"><span class="dot-label">CV</span><i class="dot-mark"></i></a></li>
+                <li><a href="#contact" data-dot="contact" aria-label="Contact"><span class="dot-label">Contact</span><i class="dot-mark"></i></a></li>
+            </ul>
+        </nav>
+        <div class="modal-backdrop" id="cvModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+            <div class="cv-modal">
+                <div class="modal-top">
+                    <h3 id="cvModalTitle">CV Preview</h3>
+<button class="close-btn" id="closeCvModal" type="button" aria-label="Close CV preview">×</button></div>
+                <div class="cv-paper" id="cvPaper" style="padding:0;min-height:80vh;background:#525659"><iframe
+                        id="cvPdfFrame"
+                        title="Md. Reahoon Zannah CV"
+                        style="width:100%;height:80vh;border:0;display:block;background:#525659"></iframe></div>
+            </div>
+        </div>
+        <script src="script.js?v=20261119"></script>
+    </body>
+</html>
